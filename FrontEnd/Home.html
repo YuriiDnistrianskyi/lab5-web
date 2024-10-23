@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code css/lab3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <header class="container__header">
+            <nav class="container__header-menu">
+                <h2>Stadiums</h2>
+                <nav class="header__nav-menu">
+                    <p id="menu-home" class="menu-item open" onclick="navigateTo('home', 'menu-home')">Home</p>
+                    <p id="menu-create" class="menu-item" onclick="navigateTo('create-page', 'menu-create')">Add stadium</p>
+                    <p id="menu-edit" class="menu-item" onclick="navigateTo('edit-page', 'menu-edit')">Edit stadium</p>
+                </nav>
+            </nav>
+            <div class="container__header-add">
+                <input id="search-name" class="header-input" placeholder="Enter name">
+                <div class="header-buttons">
+                    <button class="header-button search" onclick="searchStadium()">Search</button>
+                    <button class="header-button clear" onclick="clearSearch()">Clear</button>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="home" class="container__page">
+        <div class="container__main-1">
+            <div class="main-1-form">
+                <div class="count-box">
+                    <h2 class="count-text-calculate">Calculate the audience</h2>
+                    <p id="result-count" class="result-text">Total: 0</p>
+                    <button class="count-calculate" onclick="countAudience()">Calculate</button>
+                </div>
+                <div class="sort-box">
+                    <h2 class="sort-text">Sort by lighting power</h2>
+                    <button id="sort" class="sort-button" onclick="startSort()">Sort</button>
+                </div>
+            </div>
+        </div>
+        <div class="container__main-2">
+            <div id="container-stadiums" class="container-stadiums">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="create-page" class="container__page">
+        <div class="create-box">
+            <h1 class="create-page-text">Create Stadium</h1>
+            <div class="create-panel">
+                <label class="create-text-item">Name</label>
+                <input type="text" id="name-create" class="create-input-item" placeholder="Enter name">
+                <label class="create-text-item">Number of audience</label>
+                <input type ="number" id="numberOfAudience-create" class="create-input-item" placeholder="Enter number of audience">
+                <label class="create-text-item">Lighting power (in suites)</label>
+                <input type="number" id="lightingPower-create" class="create-input-item" placeholder="Enter lighting power">
+            </div>
+            <div class="main-create-buttons">
+                <button class="main-button" onclick="addElement()">Create</button>
+                <button class="main-button" onclick="clearInputCreate()">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="edit-page" class="container__page">
+        <div class="create-box">
+            <h1 class="create-page-text">Edit Stadium</h1>
+            <div class="create-panel">
+                <label class="create-text-item">Name</label>
+                <input type="text" id="name-edit" class="create-input-item" placeholder="Enter name">
+                <label class="create-text-item">Number of audience</label>
+                <input type ="text" id="numberOfAudience-edit" class="create-input-item" placeholder="Enter number of audience">
+                <label class="create-text-item">Lighting power (in suites)</label>
+                <input type="text" id="lightingPower-edit" class="create-input-item" placeholder="Enter lighting power">
+            </div>
+            <div class="main-create-buttons">
+                <button id="edit-button-page" class="main-button">Edit</button>
+                <button class="main-button" onclick="clearInputEdit()">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="javaScript/home.js"></script>
+</body>
+</html>

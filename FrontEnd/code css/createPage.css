@@ -1,0 +1,55 @@
+.create-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+}
+
+.create-page-text {
+    width: 100%;
+    text-align: center;
+}
+
+.create-panel {
+    margin: 0 auto;
+    width: 70%;
+    height: 50%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    height: 8%;
+} 
+
+.create-input-item{
+    margin: 0 auto;
+    width: 99%;
+    height: 15%;
+    border-radius: 20px;
+}
+
+.main-create-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    width: 70%;
+    height: 15%;
+}
+
+.main-button {
+    width: 45%;
+    height: 60%;
+    border-radius: 20px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.main-button:active {
+    transform: scale(0.9);
+}
