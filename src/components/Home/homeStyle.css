@@ -1,0 +1,99 @@
+.container {
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    align-items: center;
+}
+
+.top {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Olympiastadion_Berlin_Sep-2015.jpg/1200px-Olympiastadion_Berlin_Sep-2015.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+}
+
+.container__heading-img {
+    margin: 0 auto;
+    width: 40%;
+    height: 80%;
+    background-image: url(https://sport.24tv.ua/resources/photos/news/202008/1404459.jpg?v=1661682078000);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container__heading-content {
+    width: 50%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.container__heading-text {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.container__form {
+    margin: 0 auto;
+    width: 80%;
+    height: 92%;
+    background-image: url(https://www.stadium.odessa.ua/wp-content/uploads/2021/09/20121130-101034-852.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container__list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 80%;
+    height: 80%;
+}
+
+.container__list div {
+    margin-top: 40px;
+}
+
+
+
+
+
+.container__button {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 20%;
+    height: 10%;
+    background-color: rgb(68, 80, 169);
+    align-items: center;
+}
+
+.container__button button {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+}
